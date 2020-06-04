@@ -1,12 +1,375 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script type="text/javascript" src="./script.js">
+    </script>
     <meta charset="utf-8">
-    <title>Ben Divin Assignment 1</title>
+    <title>Ben Divin Assignment 1 Nonogram</title>
+    <link rel="stylesheet" href="./stylesheets/assign1.css"
   </head>
   <body>
-    <main>
-      insert here
-    </main>
+    <table id="table">
+      <tr>
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td id="0"; onclick='changeColor(this,this.id)'></td>
+        <td id="1"; onclick='changeColor(this,this.id)'></td>
+        <td id="2"; onclick='changeColor(this,this.id)'></td>
+        <td id="3"; onclick='changeColor(this,this.id)'></td>
+        <td id="4"; onclick='changeColor(this,this.id)'></td>
+        <td id="5"; onclick='changeColor(this,this.id)'></td>
+        <td id="6"; onclick='changeColor(this,this.id)'></td>
+        <td id="7"; onclick='changeColor(this,this.id)'></td>
+        <td id="8"; onclick='changeColor(this,this.id)'></td>
+        <td id="9"; onclick='changeColor(this,this.id)'></td>
+        <td id="10"; onclick='changeColor(this,this.id)'></td>
+        <td id="11"; onclick='changeColor(this,this.id)'></td>
+        <td id="12"; onclick='changeColor(this,this.id)'></td>
+        <td id="13"; onclick='changeColor(this,this.id)'></td>
+        <td id="14"; onclick='changeColor(this,this.id)'></td>
+        <td id="15"; onclick='changeColor(this,this.id)'></td>
+        <td id="16"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td id="17"; onclick='changeColor(this,this.id)'></td>
+        <td id="18"; onclick='changeColor(this,this.id)'></td>
+        <td id="19"; onclick='changeColor(this,this.id)'></td>
+        <td id="20"; onclick='changeColor(this,this.id)'></td>
+        <td id="21"; onclick='changeColor(this,this.id)'></td>
+        <td id="22"; onclick='changeColor(this,this.id)'></td>
+        <td id="23"; onclick='changeColor(this,this.id)'></td>
+        <td id="24"; onclick='changeColor(this,this.id)'></td>
+        <td id="25"; onclick='changeColor(this,this.id)'></td>
+        <td id="26"; onclick='changeColor(this,this.id)'></td>
+        <td id="27"; onclick='changeColor(this,this.id)'></td>
+        <td id="28"; onclick='changeColor(this,this.id)'></td>
+        <td id="29"; onclick='changeColor(this,this.id)'></td>
+        <td id="30"; onclick='changeColor(this,this.id)'></td>
+        <td id="31"; onclick='changeColor(this,this.id)'></td>
+        <td id="32"; onclick='changeColor(this,this.id)'></td>
+        <td id="33"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td id="34"; onclick='changeColor(this,this.id)'></td>
+        <td id="35"; onclick='changeColor(this,this.id)'></td>
+        <td id="36"; onclick='changeColor(this,this.id)'></td>
+        <td id="37"; onclick='changeColor(this,this.id)'></td>
+        <td id="38"; onclick='changeColor(this,this.id)'></td>
+        <td id="39"; onclick='changeColor(this,this.id)'></td>
+        <td id="40"; onclick='changeColor(this,this.id)'></td>
+        <td id="41"; onclick='changeColor(this,this.id)'></td>
+        <td id="42"; onclick='changeColor(this,this.id)'></td>
+        <td id="43"; onclick='changeColor(this,this.id)'></td>
+        <td id="44"; onclick='changeColor(this,this.id)'></td>
+        <td id="45"; onclick='changeColor(this,this.id)'></td>
+        <td id="46"; onclick='changeColor(this,this.id)'></td>
+        <td id="47"; onclick='changeColor(this,this.id)'></td>
+        <td id="48"; onclick='changeColor(this,this.id)'></td>
+        <td id="49"; onclick='changeColor(this,this.id)'></td>
+        <td id="50"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td id="51"; onclick='changeColor(this,this.id)'></td>
+        <td id="52"; onclick='changeColor(this,this.id)'></td>
+        <td id="53"; onclick='changeColor(this,this.id)'></td>
+        <td id="54"; onclick='changeColor(this,this.id)'></td>
+        <td id="55"; onclick='changeColor(this,this.id)'></td>
+        <td id="56"; onclick='changeColor(this,this.id)'></td>
+        <td id="57"; onclick='changeColor(this,this.id)'></td>
+        <td id="58"; onclick='changeColor(this,this.id)'></td>
+        <td id="59"; onclick='changeColor(this,this.id)'></td>
+        <td id="60"; onclick='changeColor(this,this.id)'></td>
+        <td id="61"; onclick='changeColor(this,this.id)'></td>
+        <td id="62"; onclick='changeColor(this,this.id)'></td>
+        <td id="63"; onclick='changeColor(this,this.id)'></td>
+        <td id="64"; onclick='changeColor(this,this.id)'></td>
+        <td id="65"; onclick='changeColor(this,this.id)'></td>
+        <td id="66"; onclick='changeColor(this,this.id)'></td>
+        <td id="67"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td id="68"; onclick='changeColor(this,this.id)'></td>
+        <td id="69"; onclick='changeColor(this,this.id)'></td>
+        <td id="70"; onclick='changeColor(this,this.id)'></td>
+        <td id="71"; onclick='changeColor(this,this.id)'></td>
+        <td id="72"; onclick='changeColor(this,this.id)'></td>
+        <td id="73"; onclick='changeColor(this,this.id)'></td>
+        <td id="74"; onclick='changeColor(this,this.id)'></td>
+        <td id="75"; onclick='changeColor(this,this.id)'></td>
+        <td id="76"; onclick='changeColor(this,this.id)'></td>
+        <td id="77"; onclick='changeColor(this,this.id)'></td>
+        <td id="78"; onclick='changeColor(this,this.id)'></td>
+        <td id="79"; onclick='changeColor(this,this.id)'></td>
+        <td id="80"; onclick='changeColor(this,this.id)'></td>
+        <td id="81"; onclick='changeColor(this,this.id)'></td>
+        <td id="82"; onclick='changeColor(this,this.id)'></td>
+        <td id="83"; onclick='changeColor(this,this.id)'></td>
+        <td id="84"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td id="85"; onclick='changeColor(this,this.id)'></td>
+        <td id="86"; onclick='changeColor(this,this.id)'></td>
+        <td id="87"; onclick='changeColor(this,this.id)'></td>
+        <td id="88"; onclick='changeColor(this,this.id)'></td>
+        <td id="89"; onclick='changeColor(this,this.id)'></td>
+        <td id="90"; onclick='changeColor(this,this.id)'></td>
+        <td id="91"; onclick='changeColor(this,this.id)'></td>
+        <td id="92"; onclick='changeColor(this,this.id)'></td>
+        <td id="93"; onclick='changeColor(this,this.id)'></td>
+        <td id="94"; onclick='changeColor(this,this.id)'></td>
+        <td id="95"; onclick='changeColor(this,this.id)'></td>
+        <td id="96"; onclick='changeColor(this,this.id)'></td>
+        <td id="97"; onclick='changeColor(this,this.id)'></td>
+        <td id="98"; onclick='changeColor(this,this.id)'></td>
+        <td id="99"; onclick='changeColor(this,this.id)'></td>
+        <td id="100"; onclick='changeColor(this,this.id)'></td>
+        <td id="101"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td id="102"; onclick='changeColor(this,this.id)'></td>
+        <td id="103"; onclick='changeColor(this,this.id)'></td>
+        <td id="104"; onclick='changeColor(this,this.id)'></td>
+        <td id="105"; onclick='changeColor(this,this.id)'></td>
+        <td id="106"; onclick='changeColor(this,this.id)'></td>
+        <td id="107"; onclick='changeColor(this,this.id)'></td>
+        <td id="108"; onclick='changeColor(this,this.id)'></td>
+        <td id="109"; onclick='changeColor(this,this.id)'></td>
+        <td id="110"; onclick='changeColor(this,this.id)'></td>
+        <td id="111"; onclick='changeColor(this,this.id)'></td>
+        <td id="112"; onclick='changeColor(this,this.id)'></td>
+        <td id="113"; onclick='changeColor(this,this.id)'></td>
+        <td id="114"; onclick='changeColor(this,this.id)'></td>
+        <td id="115"; onclick='changeColor(this,this.id)'></td>
+        <td id="116"; onclick='changeColor(this,this.id)'></td>
+        <td id="117"; onclick='changeColor(this,this.id)'></td>
+        <td id="118"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td id="119"; onclick='changeColor(this,this.id)'></td>
+        <td id="120"; onclick='changeColor(this,this.id)'></td>
+        <td id="121"; onclick='changeColor(this,this.id)'></td>
+        <td id="122"; onclick='changeColor(this,this.id)'></td>
+        <td id="123"; onclick='changeColor(this,this.id)'></td>
+        <td id="124"; onclick='changeColor(this,this.id)'></td>
+        <td id="125"; onclick='changeColor(this,this.id)'></td>
+        <td id="126"; onclick='changeColor(this,this.id)'></td>
+        <td id="127"; onclick='changeColor(this,this.id)'></td>
+        <td id="128"; onclick='changeColor(this,this.id)'></td>
+        <td id="129"; onclick='changeColor(this,this.id)'></td>
+        <td id="130"; onclick='changeColor(this,this.id)'></td>
+        <td id="131"; onclick='changeColor(this,this.id)'></td>
+        <td id="132"; onclick='changeColor(this,this.id)'></td>
+        <td id="133"; onclick='changeColor(this,this.id)'></td>
+        <td id="134"; onclick='changeColor(this,this.id)'></td>
+        <td id="135"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>9</th>
+        <td id="136"; onclick='changeColor(this,this.id)'></td>
+        <td id="137"; onclick='changeColor(this,this.id)'></td>
+        <td id="138"; onclick='changeColor(this,this.id)'></td>
+        <td id="139"; onclick='changeColor(this,this.id)'></td>
+        <td id="140"; onclick='changeColor(this,this.id)'></td>
+        <td id="141"; onclick='changeColor(this,this.id)'></td>
+        <td id="142"; onclick='changeColor(this,this.id)'></td>
+        <td id="143"; onclick='changeColor(this,this.id)'></td>
+        <td id="144"; onclick='changeColor(this,this.id)'></td>
+        <td id="145"; onclick='changeColor(this,this.id)'></td>
+        <td id="146"; onclick='changeColor(this,this.id)'></td>
+        <td id="147"; onclick='changeColor(this,this.id)'></td>
+        <td id="148"; onclick='changeColor(this,this.id)'></td>
+        <td id="149"; onclick='changeColor(this,this.id)'></td>
+        <td id="150"; onclick='changeColor(this,this.id)'></td>
+        <td id="151"; onclick='changeColor(this,this.id)'></td>
+        <td id="152"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>10</th>
+        <td id="153"; onclick='changeColor(this,this.id)'></td>
+        <td id="154"; onclick='changeColor(this,this.id)'></td>
+        <td id="155"; onclick='changeColor(this,this.id)'></td>
+        <td id="156"; onclick='changeColor(this,this.id)'></td>
+        <td id="157"; onclick='changeColor(this,this.id)'></td>
+        <td id="158"; onclick='changeColor(this,this.id)'></td>
+        <td id="159"; onclick='changeColor(this,this.id)'></td>
+        <td id="160"; onclick='changeColor(this,this.id)'></td>
+        <td id="161"; onclick='changeColor(this,this.id)'></td>
+        <td id="162"; onclick='changeColor(this,this.id)'></td>
+        <td id="163"; onclick='changeColor(this,this.id)'></td>
+        <td id="164"; onclick='changeColor(this,this.id)'></td>
+        <td id="165"; onclick='changeColor(this,this.id)'></td>
+        <td id="166"; onclick='changeColor(this,this.id)'></td>
+        <td id="167"; onclick='changeColor(this,this.id)'></td>
+        <td id="168"; onclick='changeColor(this,this.id)'></td>
+        <td id="169"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>11</th>
+        <td id="170"; onclick='changeColor(this,this.id)'></td>
+        <td id="171"; onclick='changeColor(this,this.id)'></td>
+        <td id="172"; onclick='changeColor(this,this.id)'></td>
+        <td id="173"; onclick='changeColor(this,this.id)'></td>
+        <td id="174"; onclick='changeColor(this,this.id)'></td>
+        <td id="175"; onclick='changeColor(this,this.id)'></td>
+        <td id="176"; onclick='changeColor(this,this.id)'></td>
+        <td id="177"; onclick='changeColor(this,this.id)'></td>
+        <td id="178"; onclick='changeColor(this,this.id)'></td>
+        <td id="179"; onclick='changeColor(this,this.id)'></td>
+        <td id="180"; onclick='changeColor(this,this.id)'></td>
+        <td id="181"; onclick='changeColor(this,this.id)'></td>
+        <td id="182"; onclick='changeColor(this,this.id)'></td>
+        <td id="183"; onclick='changeColor(this,this.id)'></td>
+        <td id="184"; onclick='changeColor(this,this.id)'></td>
+        <td id="185"; onclick='changeColor(this,this.id)'></td>
+        <td id="186"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>12</th>
+        <td id="187"; onclick='changeColor(this,this.id)'></td>
+        <td id="188"; onclick='changeColor(this,this.id)'></td>
+        <td id="189"; onclick='changeColor(this,this.id)'></td>
+        <td id="190"; onclick='changeColor(this,this.id)'></td>
+        <td id="191"; onclick='changeColor(this,this.id)'></td>
+        <td id="192"; onclick='changeColor(this,this.id)'></td>
+        <td id="193"; onclick='changeColor(this,this.id)'></td>
+        <td id="194"; onclick='changeColor(this,this.id)'></td>
+        <td id="195"; onclick='changeColor(this,this.id)'></td>
+        <td id="196"; onclick='changeColor(this,this.id)'></td>
+        <td id="197"; onclick='changeColor(this,this.id)'></td>
+        <td id="198"; onclick='changeColor(this,this.id)'></td>
+        <td id="199"; onclick='changeColor(this,this.id)'></td>
+        <td id="200"; onclick='changeColor(this,this.id)'></td>
+        <td id="201"; onclick='changeColor(this,this.id)'></td>
+        <td id="202"; onclick='changeColor(this,this.id)'></td>
+        <td id="203"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>13</th>
+        <td id="204"; onclick='changeColor(this,this.id)'></td>
+        <td id="205"; onclick='changeColor(this,this.id)'></td>
+        <td id="206"; onclick='changeColor(this,this.id)'></td>
+        <td id="207"; onclick='changeColor(this,this.id)'></td>
+        <td id="208"; onclick='changeColor(this,this.id)'></td>
+        <td id="209"; onclick='changeColor(this,this.id)'></td>
+        <td id="210"; onclick='changeColor(this,this.id)'></td>
+        <td id="211"; onclick='changeColor(this,this.id)'></td>
+        <td id="212"; onclick='changeColor(this,this.id)'></td>
+        <td id="213"; onclick='changeColor(this,this.id)'></td>
+        <td id="214"; onclick='changeColor(this,this.id)'></td>
+        <td id="215"; onclick='changeColor(this,this.id)'></td>
+        <td id="216"; onclick='changeColor(this,this.id)'></td>
+        <td id="217"; onclick='changeColor(this,this.id)'></td>
+        <td id="218"; onclick='changeColor(this,this.id)'></td>
+        <td id="219"; onclick='changeColor(this,this.id)'></td>
+        <td id="220"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>14</th>
+        <td id="221"; onclick='changeColor(this,this.id)'></td>
+        <td id="222"; onclick='changeColor(this,this.id)'></td>
+        <td id="223"; onclick='changeColor(this,this.id)'></td>
+        <td id="224"; onclick='changeColor(this,this.id)'></td>
+        <td id="225"; onclick='changeColor(this,this.id)'></td>
+        <td id="226"; onclick='changeColor(this,this.id)'></td>
+        <td id="227"; onclick='changeColor(this,this.id)'></td>
+        <td id="228"; onclick='changeColor(this,this.id)'></td>
+        <td id="229"; onclick='changeColor(this,this.id)'></td>
+        <td id="230"; onclick='changeColor(this,this.id)'></td>
+        <td id="231"; onclick='changeColor(this,this.id)'></td>
+        <td id="232"; onclick='changeColor(this,this.id)'></td>
+        <td id="233"; onclick='changeColor(this,this.id)'></td>
+        <td id="234"; onclick='changeColor(this,this.id)'></td>
+        <td id="235"; onclick='changeColor(this,this.id)'></td>
+        <td id="236"; onclick='changeColor(this,this.id)'></td>
+        <td id="237"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>15</th>
+        <td id="238"; onclick='changeColor(this,this.id)'></td>
+        <td id="239"; onclick='changeColor(this,this.id)'></td>
+        <td id="240"; onclick='changeColor(this,this.id)'></td>
+        <td id="241"; onclick='changeColor(this,this.id)'></td>
+        <td id="242"; onclick='changeColor(this,this.id)'></td>
+        <td id="243"; onclick='changeColor(this,this.id)'></td>
+        <td id="244"; onclick='changeColor(this,this.id)'></td>
+        <td id="245"; onclick='changeColor(this,this.id)'></td>
+        <td id="246"; onclick='changeColor(this,this.id)'></td>
+        <td id="247"; onclick='changeColor(this,this.id)'></td>
+        <td id="248"; onclick='changeColor(this,this.id)'></td>
+        <td id="249"; onclick='changeColor(this,this.id)'></td>
+        <td id="250"; onclick='changeColor(this,this.id)'></td>
+        <td id="251"; onclick='changeColor(this,this.id)'></td>
+        <td id="252"; onclick='changeColor(this,this.id)'></td>
+        <td id="253"; onclick='changeColor(this,this.id)'></td>
+        <td id="254"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>16</th>
+        <td id="255"; onclick='changeColor(this,this.id)'></td>
+        <td id="256"; onclick='changeColor(this,this.id)'></td>
+        <td id="257"; onclick='changeColor(this,this.id)'></td>
+        <td id="258"; onclick='changeColor(this,this.id)'></td>
+        <td id="259"; onclick='changeColor(this,this.id)'></td>
+        <td id="260"; onclick='changeColor(this,this.id)'></td>
+        <td id="261"; onclick='changeColor(this,this.id)'></td>
+        <td id="262"; onclick='changeColor(this,this.id)'></td>
+        <td id="263"; onclick='changeColor(this,this.id)'></td>
+        <td id="264"; onclick='changeColor(this,this.id)'></td>
+        <td id="265"; onclick='changeColor(this,this.id)'></td>
+        <td id="266"; onclick='changeColor(this,this.id)'></td>
+        <td id="267"; onclick='changeColor(this,this.id)'></td>
+        <td id="268"; onclick='changeColor(this,this.id)'></td>
+        <td id="269"; onclick='changeColor(this,this.id)'></td>
+        <td id="270"; onclick='changeColor(this,this.id)'></td>
+        <td id="271"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+      <tr>
+        <th>17</th>
+        <td id="272"; onclick='changeColor(this,this.id)'></td>
+        <td id="273"; onclick='changeColor(this,this.id)'></td>
+        <td id="274"; onclick='changeColor(this,this.id)'></td>
+        <td id="275"; onclick='changeColor(this,this.id)'></td>
+        <td id="276"; onclick='changeColor(this,this.id)'></td>
+        <td id="277"; onclick='changeColor(this,this.id)'></td>
+        <td id="278"; onclick='changeColor(this,this.id)'></td>
+        <td id="279"; onclick='changeColor(this,this.id)'></td>
+        <td id="280"; onclick='changeColor(this,this.id)'></td>
+        <td id="281"; onclick='changeColor(this,this.id)'></td>
+        <td id="282"; onclick='changeColor(this,this.id)'></td>
+        <td id="283"; onclick='changeColor(this,this.id)'></td>
+        <td id="284"; onclick='changeColor(this,this.id)'></td>
+        <td id="285"; onclick='changeColor(this,this.id)'></td>
+        <td id="286"; onclick='changeColor(this,this.id)'></td>
+        <td id="287"; onclick='changeColor(this,this.id)'></td>
+        <td id="288"; onclick='changeColor(this,this.id)'></td>
+      </tr>
+
+    </table>
   </body>
 </html>
