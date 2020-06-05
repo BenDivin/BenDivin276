@@ -1,16 +1,24 @@
 table {
-  height: 800px;
-  width: 800px;
   margin: 0;
   border-collapse: collapse;
   padding: 0px;
 }
 
-th, td{
-  border: 1px solid blue;
+th {
+  border: 2px solid black;
   border-spacing: 0;
   height: 40px;
   width: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: 'red';
+}
+
+td {
+  border: 1px solid black;
+  border-spacing: 0;
+  height: 20px;
+  width: 20px;
   margin: 0;
   padding: 0;
   background-color: '';
