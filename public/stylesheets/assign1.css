@@ -4,14 +4,46 @@ table {
   padding: 0px;
 }
 
-th {
+.message {
+  display: inline-block;
+  width: 800px;
+  font-family: monospace;
+}
+
+.topCell {
   border: 2px solid black;
+  font-family: monospace;
+  border-spacing: 0;
+  height: 60px;
+  width: 40px;
+  background-color: #d3d3d3;
+}
+
+.sideCell{
+  border: 2px solid black;
+  font-family: monospace;
   border-spacing: 0;
   height: 40px;
-  width: 40px;
-  margin: 0;
-  padding: 0;
-  background-color: 'red';
+  width: 60px;
+  background-color: #d3d3d3;
+}
+
+.buttons {
+  height: 50px;
+  width: 201px;
+  font-size: 15px;
+  font-family: monospace;
+  color: black;
+  background-color: #d3d3d3;
+}
+
+.instructionsButton{
+  height: 50px;
+  width: 201px;
+  font-size: 15px;
+  font-family: monospace;
+  color: black;
+  background-color: #d3d3d3;
 }
 
 td {
