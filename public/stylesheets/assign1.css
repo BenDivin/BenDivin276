@@ -1,12 +1,16 @@
+body {
+  text-align: center;
+}
+
 table {
-  margin: 0;
+  margin: auto;
   border-collapse: collapse;
   padding: 0px;
 }
 
 .message {
   display: inline-block;
-  width: 800px;
+  width: 650px;
   font-family: monospace;
 }
 
@@ -15,7 +19,7 @@ table {
   font-family: monospace;
   border-spacing: 0;
   height: 60px;
-  width: 40px;
+  width: 30px;
   background-color: #d3d3d3;
 }
 
@@ -23,24 +27,15 @@ table {
   border: 2px solid black;
   font-family: monospace;
   border-spacing: 0;
-  height: 40px;
+  height: 30px;
   width: 60px;
   background-color: #d3d3d3;
 }
 
 .buttons {
-  height: 50px;
-  width: 201px;
-  font-size: 15px;
-  font-family: monospace;
-  color: black;
-  background-color: #d3d3d3;
-}
-
-.instructionsButton{
-  height: 50px;
-  width: 201px;
-  font-size: 15px;
+  height: 38px;
+  width: 158px;
+  font-size: 11px;
   font-family: monospace;
   color: black;
   background-color: #d3d3d3;
@@ -49,8 +44,8 @@ table {
 td {
   border: 1px solid black;
   border-spacing: 0;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   margin: 0;
   padding: 0;
   background-color: '';
