@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  padding: 0px;
+}
+
+.message {
+  display: inline-block;
+  width: 650px;
+  font-family: monospace;
+}
+
+.topCell {
+  border: 2px solid black;
+  font-family: monospace;
+  border-spacing: 0;
+  height: 60px;
+  width: 30px;
+  background-color: #d3d3d3;
+}
+
+.sideCell{
+  border: 2px solid black;
+  font-family: monospace;
+  border-spacing: 0;
+  height: 30px;
+  width: 60px;
+  background-color: #d3d3d3;
+}
+
+.buttons {
+  height: 38px;
+  width: 158px;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  background-color: #d3d3d3;
+}
+
+td {
+  border: 1px solid black;
+  border-spacing: 0;
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: '';
+}
