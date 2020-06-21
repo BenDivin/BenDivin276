@@ -5,12 +5,12 @@ const PORT = process.env.PORT || 5000
 const { Pool } = require('pg');
 var client;
 pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'person',
-  password: 'power',
-  port: 5432,
-  //connectionString: process.env.DATABASE_URL;
+  //user: 'postgres',
+  //host: 'localhost',
+  //database: 'person',
+  //password: 'power',
+  //port: 5432,
+  connectionString: process.env.HEROKU_POSTGRESQL_BRONZE_URL
 });
 
 var app = express();
