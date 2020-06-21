@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script type="text/javascript" src="./script2.js">
+    </script>
     <meta charset="utf-8">
     <title>Database template</title>
     <link rel="stylesheet" href="./stylesheets/assign2.css">
   </head>
   <body>
     <h1>Users</h1>
-    <form class="" action="/adduser" method="post">
-      <input type="text" name="name" value="" placeholder="Name" maxlength="10"> <br>
+    <form class="" action="/addperson" method="post">
+      <input type="text" name="name" value="" placeholder="Name" maxlength="10" required> <br>
+      <input type="number" name="age" value="" placeholder="Age" required> <br>
+      <input type="number" name="size" value="" placeholder="Size" required> <br>
+      <input type="text" name="type" value="" placeholder="Type" maxlength="2" required> <br>
+      <input type="number" name="height" value="" placeholder="Height" required> <br>
+      <input type="number" name="skill" value="" placeholder="Skill" required> <br>
+      <input type="submit" name="sub" value="SEND TO SERVER">
+    </form>
+    <form class"" action ="/deleteperson" method="post">
+      <input type="text" name="deleteThis" value="" placeholder="Name" maxlength="10" required> <br>
+      <input type="submit" name="deletingPerson" value="Delete this person">
+    </form>
+    <form  class="" action="/editperson" method="post">
+      <input type="text" name="name" value="" placeholder="Name" maxlength="10" required> <br>
       <input type="number" name="age" value="" placeholder="Age"> <br>
       <input type="number" name="size" value="" placeholder="Size"> <br>
       <input type="text" name="type" value="" placeholder="Type" maxlength="2"> <br>
       <input type="number" name="height" value="" placeholder="Height"> <br>
       <input type="number" name="skill" value="" placeholder="Skill"> <br>
-      <input type="submit" name="sub" value="SEND TO SERVER">
+      <input type="submit" name="Editingperson" value="Edit this person">
     </form>
-    <script type="text/javascript" src="./script2.js">
-
-    </script>
+    <button onclick="displayPeople()"> CLICK ME </button>
   </body>
 </html>

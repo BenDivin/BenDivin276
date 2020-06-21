@@ -1,0 +1,116 @@
+.people {
+  height: 100px;
+  width: 100px;
+  border: 1px solid blue;
+  background-color: blue;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.peoplefight {
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+  background-color: blue;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.redCorner {
+  position: absolute;
+  left: 0px;
+  top: 40%;
+}
+
+.blueCorner {
+  position: absolute;
+  right: 30px;
+  top: 40%;
+}
+
+.winner {
+  align-items: center;
+}
+
+.links {
+  position: absolute;
+  display: inline-block;
+  top: 80%;
+  left: 42%;
+}
+
+h2 {
+  pointer-events: none;
+  color: yellow
+}
+
+body {
+  background-image: linear-gradient(to right, #990000 , #7F7FFF);
+  text-align: center;
+  font-family: monospace;
+}
+
+.Adding {
+  display: inline-block;
+  border: 1px solid yellow;
+  margin: 0px auto;
+}
+
+.Editing {
+  display: inline-block;
+  border: 1px solid yellow;
+  margin: 0px auto;
+}
+
+.Deleting {
+  display: inline-block;
+  border: 1px solid yellow;
+  margin: 0px auto;
+}
+
+input[type=text] {
+  width: 100px;
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 50px;
+  box-sizing: content-box;
+  font-family: monospace;
+}
+
+input[type=number] {
+  width: 100px;
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 50px;
+  box-sizing: content-box;
+  font-family: monospace;
+}
+
+.Peoples {
+  display: inline-block;
+  height: 225px;
+  width: 300px;
+  overflow-y: scroll;
+  color: yellow;
+}
+
+.buttons {
+  height: 38px;
+  width: 158px;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  background-color: yellow;
+}
+
+.beegbutton {
+  height: 100px;
+  width: 300px;
+  font-size: 28px;
+  font-family: monospace;
+  color: black;
+  padding: 1px;
+  border: 1px solid black;
+  background-color: grey;
+  text-decoration: none;
+}

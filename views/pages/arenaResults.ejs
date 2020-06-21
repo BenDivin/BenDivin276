@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RESULTS</title>
+    <link rel="stylesheet" href="./stylesheets/assign2.css">
+  </head>
+  <body>
+    <h2> YOUR WINNER: </h2>
+    <div class = "redCorner">
+      <h2> THE RED CORNER: </h2>
+    <% if(rows[0].age >= Math.max(rows[0].size,rows[0].height,rows[0].skill)) { %>
+      <button class = "peoplefight"; type="button"; style="background-color: grey";><h2><%= rows[0].name %></h2></button>
+    <% } else if (rows[0].size >= Math.max(rows[0].age,rows[0].height,rows[0].skill)) { %>
+      <button class = "peoplefight"; type="button"; style="width:300px";><h2><%= rows[0].name %></h2></button>
+    <% } else if (rows[0].height >= Math.max(rows[0].size,rows[0].age,rows[0].skill)) { %>
+      <button class = "peoplefight"; type="button"; style="height:300px; background-color: red";><h2><%= rows[0].name %></h2></button>
+    <% } else { %>
+      <button class = "peoplefight"; type="button"; style="height:240px; width:240px; background-color:purple";><h2><%= rows[0].name %></h2></button>
+    <% } %>
+    </div>
+    <br>
+    <div class = "blueCorner">
+      <h2> THE BLUE CORNER: </h2>
+    <% if(rows[1].age >= Math.max(rows[1].size,rows[1].height,rows[1].skill)) { %>
+      <button class = "peoplefight"; type="button"; style="background-color: grey";><h2><%= rows[1].name %></h2></button>
+    <% } else if (rows[1].size >= Math.max(rows[1].age,rows[1].height,rows[1].skill)) { %>
+      <button class = "peoplefight"; type="button"; style="width:300px";><h2><%= rows[1].name %></h2></button>
+    <% } else if (rows[1].height >= Math.max(rows[1].size,rows[1].age,rows[1].skill)) { %>
+      <button class = "peoplefight"; type="button"; style="height:300px; background-color: red";><h2><%= rows[1].name %></h2></button>
+    <% } else { %>
+      <button class = "peoplefight"; type="button"; style="height:240px; width:240px; background-color:purple";><h2><%= rows[1].name %></h2></button>
+    <% } %>
+    </div>
+
+    <div class = "winner">
+      <% if((rows[0].height)*(rows[0].size)*(rows[0].skill) > (rows[1].height)*(rows[1].size)*(rows[1].skill)) { %>
+        <% if(rows[0].age >= Math.max(rows[0].size,rows[0].height,rows[0].skill)) { %>
+          <button class = "peoplefight"; type="button"; style="background-color: grey";><h2><%= rows[0].name %></h2></button>
+        <% } else if (rows[0].size >= Math.max(rows[0].age,rows[0].height,rows[0].skill)) { %>
+          <button class = "peoplefight"; type="button"; style="width:300px";><h2><%= rows[0].name %></h2></button>
+        <% } else if (rows[0].height >= Math.max(rows[0].size,rows[0].age,rows[0].skill)) { %>
+          <button class = "peoplefight"; type="button"; style="height:300px; background-color: red";><h2><%= rows[0].name %></h2></button>
+        <% } else { %>
+          <button class = "peoplefight"; type="button"; style="height:240px; width:240px; background-color:purple";><h2><%= rows[0].name %></h2></button>
+        <% } %>
+
+      <% } else if((rows[0].height)*(rows[0].size)*(rows[0].skill) < (rows[1].height)*(rows[1].size)*(rows[1].skill)) { %>
+        <% if(rows[1].age >= Math.max(rows[1].size,rows[1].height,rows[1].skill)) { %>
+          <button class = "peoplefight"; type="button"; style="background-color: grey";><h2><%= rows[1].name %></h2></button>
+        <% } else if (rows[1].size >= Math.max(rows[1].age,rows[1].height,rows[1].skill)) { %>
+          <button class = "peoplefight"; type="button"; style="width:300px";><h2><%= rows[1].name %></h2></button>
+        <% } else if (rows[1].height >= Math.max(rows[1].size,rows[1].age,rows[1].skill)) { %>
+          <button class = "peoplefight"; type="button"; style="height:300px; background-color: red";><h2><%= rows[1].name %></h2></button>
+        <% } else { %>
+          <button class = "peoplefight"; type="button"; style="height:240px; width:240px; background-color:purple";><h2><%= rows[1].name %></h2></button>
+        <% } %>
+      <% } else { %>
+        <h2> I did not account for a Draw </h2>m
+      <% } %>
+    </div>
+
+    <div class="links">
+    <a class="beegbutton" href="/arena">GO BACK TO THE ARENA</a> <br> <br>
+    <a class="beegbutton" href="/Assignment2">GO BACK TO CUSTOMIZATION</a>
+  </div>
+
+</body>
+</html>

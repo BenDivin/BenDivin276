@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fighter Customization</title>
+    <link rel="stylesheet" href="./stylesheets/assign2.css">
+  </head>
+  <body>
+    <h1>Customize your fighter</h1>
+    <form class="Adding" action="/addperson" method="post">
+      <h2> ADD: </h2> <br>
+      <input type="text" name="name" value="" placeholder="Name" maxlength="10" required> <br>
+      <input type="number" name="age" value="" placeholder="Age" required> <br>
+      <input type="number" name="size" value="" placeholder="Size" required> <br>
+      <input type="text" name="type" value="" placeholder="Type" maxlength="2" required> <br>
+      <input type="number" name="height" value="" placeholder="Height" required> <br>
+      <input type="number" name="skill" value="" placeholder="Skill" required> <br>
+      <input class="buttons" type="submit" name="sub" value="Add this fighter">
+    </form>
+    <form class="Editing" action="/editperson" method="post">
+      <h2> EDIT: </h2> <br>
+      <input type="text" name="name" value="" placeholder="Name" maxlength="10" required> <br>
+      <input type="number" name="age" value="" placeholder="Age"> <br>
+      <input type="number" name="size" value="" placeholder="Size"> <br>
+      <input type="text" name="type" value="" placeholder="Type" maxlength="2"> <br>
+      <input type="number" name="height" value="" placeholder="Height"> <br>
+      <input type="number" name="skill" value="" placeholder="Skill"> <br>
+      <input class="buttons" type="submit" name="Editingperson" value="Edit this fighter">
+    </form>
+    <br>
+
+    <div class="Peoples">
+    <% rows.forEach(function(r) { %>
+        <% if(r.age >= Math.max(r.size,r.height,r.skill)) { %>
+          <button class = "people"; type="button"; style="background-color: grey";><h2><%= r.name %></h2></button>
+        <% } else if (r.size >= Math.max(r.age,r.height,r.skill)) { %>
+          <button class = "people"; type="button"; style="width:150px";><h2><%= r.name %></h2></button>
+        <% } else if (r.height >= Math.max(r.size,r.age,r.skill)) { %>
+          <button class = "people"; type="button"; style="height:150px; background-color: red";><h2><%= r.name %></h2></button>
+        <% } else { %>
+          <button class = "people"; type="button"; style="height:120px; width:120px; background-color:purple";><h2><%= r.name %></h2></button>
+        <% } %>
+        <div class = "peopleinfo";> Age: <%= r.age %> Size: <%= r.size %> Type: <%= r.type %> <br> Height: <%= r.height %>, Skill: <%= r.skill %> </div>
+        <br>
+
+    <% }); %>
+    </div>
+    <br>
+    <form class="Deleting" action ="/deleteperson" method="post">
+      <input type="text" name="deleteThis" value="" placeholder="Name" maxlength="10" required> <br>
+      <input class="buttons" type="submit" name="deletingPerson" value="DESTROY this fighter">
+    </form>
+    <br>
+    <a class="beegbutton" href="/arena">GO TO THE ARENA</a>
+
+
+</body>
+</html>
